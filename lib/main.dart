@@ -1,4 +1,4 @@
-import 'package:exercise1/tampilanawal.dart';
+import 'package:exercise1/View/tampilanawal.dart';
 import 'package:flutter/material.dart';
 
 void main() {
