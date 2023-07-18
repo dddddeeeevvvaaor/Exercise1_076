@@ -1,3 +1,4 @@
+import 'package:exercise1/View/signup_screen.dart';
 import 'package:exercise1/Widgets/custom_text_form_field.dart';
 import 'package:exercise1/View/tampilanawal.dart';
 import 'package:flutter/material.dart';
@@ -77,7 +78,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   controller: _nameController,
                   hintText: "Enter your name",
                   obscureText: false,
-                  icon: Icons.person, onSaved: (value) {},
+                  icon: Icons.person,
+                  onSaved: (value) {},
                 ),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
@@ -191,7 +193,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           print('Sign Up Button Pressed');
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => TampilanAwal(),
+                              builder: (context) => SignupScreen(),
                             ),
                           );
                         },
