@@ -1,3 +1,4 @@
+import 'package:exercise1/View/home_screen.dart';
 import 'package:exercise1/View/login_screen.dart';
 import 'package:exercise1/Widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +38,7 @@ class _SignupScreenState extends State<SignupScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //membuat button berbentuk kotak menutuju LoginScreen
             Container(
               margin: const EdgeInsets.only(top: 40),
               padding: const EdgeInsets.only(left: 20),
@@ -48,6 +50,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     MaterialPageRoute(builder: (context) => LoginScreen()),
                   );
                 },
+                //membuat button berbentuk persegiempat dan bisa di atur ukurannya
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
@@ -56,12 +59,14 @@ class _SignupScreenState extends State<SignupScreen> {
                       top: 10, bottom: 10, left: 10, right: 10),
                   minimumSize: const Size(10, 10),
                 ),
+                //membuat icon panah ke kiri
                 child: const Icon(
                   Icons.arrow_back,
                   color: Colors.white,
                 ),
               ),
             ),
+            //membuat logo berbentuk lingkaran
             Container(
               margin: const EdgeInsets.only(top: 5),
               width: 100.0,
@@ -161,6 +166,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         },
                       ),
                     ),
+                    //membuat validasi password
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter your password';
@@ -174,6 +180,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     },
                   ),
                 ),
+                //membuat re-password
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   padding: const EdgeInsets.only(left: 20),
@@ -213,6 +220,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         },
                       ),
                     ),
+                    //membuat validasi re-password
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please re-enter your password';
@@ -261,7 +269,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (context) =>
-                              LoginScreen(),
+                              HomeScreen(name: _nameController.text),
                         ),
                       );
                     }
@@ -269,6 +277,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
+                  //membuat text
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
