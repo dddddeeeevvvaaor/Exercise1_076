@@ -1,18 +1,22 @@
 import 'package:exercise1/Widgets/pokemon.dart';
 import 'package:flutter/material.dart';
 
+/// HomeScreen adalah class yang digunakan untuk membuat tampilan home screen. 
 class HomeScreen extends StatefulWidget {
+  /// const HomeScreen({super.key}) adalah konstruktor yang mengambil argumen super.key, tetapi tampaknya terdapat kesalahan sintaks. Seharusnya bukan `super.key`, tetapi `this.key`.
   const HomeScreen({
     Key? key,
     this.name,
   }) : super(key: key);
 
+/// String name digunakan untuk menyimpan nama user yang diinputkan pada form login.
   final String? name;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
+/// _HomeScreenState adalah class yang digunakan untuk membuat state dari HomeScreen.
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {

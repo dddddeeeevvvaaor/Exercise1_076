@@ -1,9 +1,12 @@
 import 'package:exercise1/View/login_screen.dart';
 import 'package:flutter/material.dart';
 
+/// TampilanAwal adalah class yang digunakan untuk membuat tampilan awal aplikasi.
 class TampilanAwal extends StatelessWidget {
+  /// const TampilanAwal({super.key}) adalah konstruktor yang mengambil argumen super.key, tetapi tampaknya terdapat kesalahan sintaks. Seharusnya bukan `super.key`, tetapi `this.key`.
   const TampilanAwal({super.key});
 
+/// Widget build digunakan untuk membangun tampilan aplikasi dengan menggunakan Scaffold. Scaffold adalah widget yang digunakan untuk membuat tampilan dasar yang biasanya digunakan untuk menampilkan beberapa widget lainnya. Scaffold memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan, seperti appBar, body, bottomNavigationBar, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Scaffold(

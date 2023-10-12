@@ -3,7 +3,9 @@ import 'package:exercise1/Widgets/custom_text_form_field.dart';
 import 'package:exercise1/View/tampilanawal.dart';
 import 'package:flutter/material.dart';
 
+/// LoginScreen adalah class yang digunakan untuk membuat tampilan login screen.
 class LoginScreen extends StatefulWidget {
+  /// const LoginScreen({super.key}) adalah konstruktor yang mengambil argumen super.key, tetapi tampaknya terdapat kesalahan sintaks. Seharusnya bukan `super.key`, tetapi `this.key`.
   LoginScreen({super.key});
 
   @override
@@ -11,14 +13,19 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  /// bool _isObscure digunakan untuk mengatur apakah password akan ditampilkan atau disembunyikan.
   bool _isObscure = true;
 
+  /// GlobalKey<FormState> _formKey digunakan untuk mengontrol form.
   final _formKey = GlobalKey<FormState>();
 
+/// TextEditingController _nameController digunakan untuk mengontrol inputan dari form name.
   final TextEditingController _nameController = TextEditingController();
 
+/// TextEditingController _passwordController digunakan untuk mengontrol inputan dari form password.
   final TextEditingController _passwordController = TextEditingController();
 
+/// Widget build ini berfungsi untuk membangun tampilan aplikasi dengan menggunakan Scaffold. Scaffold adalah widget yang digunakan untuk membuat tampilan dasar yang biasanya digunakan untuk menampilkan beberapa widget lainnya. Scaffold memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan, seperti appBar, body, bottomNavigationBar, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Scaffold(

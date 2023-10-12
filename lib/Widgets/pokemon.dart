@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+///class Pokemon1 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
 class Pokemon1 extends StatelessWidget {
+  ///const Pokemon1 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
   const Pokemon1({
     Key? key,
     required this.gambar,
@@ -9,11 +11,17 @@ class Pokemon1 extends StatelessWidget {
     required this.deskripsi,
   }) : super(key: key);
 
+/// String gambar digunakan untuk menyimpan link gambar pokemon.
   final String gambar;
+/// String nomor digunakan untuk menyimpan nomor pokemon.
   final String nomor;
+/// String nama_pokemon digunakan untuk menyimpan nama pokemon.
   final String nama_pokemon;
+/// String deskripsi digunakan untuk menyimpan deskripsi pokemon.
   final String deskripsi;
 
+///pada code dibawah ini, terdapat beberapa widget yang digunakan untuk membangun tampilan aplikasi. Widget yang digunakan antara lain Column, Container, SizedBox, Row, Text, dan lain-lain.
+///berfungsi untuk membangun tampilan aplikasi dengan menggunakan Column. Column adalah widget yang digunakan untuk membuat kolom pada tampilan aplikasi. Column memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan kolom, seperti mainAxisAlignment, children, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -141,7 +149,9 @@ class Pokemon1 extends StatelessWidget {
   }
 }
 
+///class Pokemon2 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
 class Pokemon2 extends StatelessWidget {
+  ///const Pokemon2 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
   const Pokemon2({
     Key? key,
     required this.gambar,
@@ -150,11 +160,17 @@ class Pokemon2 extends StatelessWidget {
     required this.deskripsi,
   }) : super(key: key);
 
+/// String gambar digunakan untuk menyimpan link gambar pokemon.
   final String gambar;
+/// String nomor digunakan untuk menyimpan nomor pokemon.
   final String nomor;
+/// String nama_pokemon digunakan untuk menyimpan nama pokemon.
   final String nama_pokemon;
+/// String deskripsi digunakan untuk menyimpan deskripsi pokemon.
   final String deskripsi;
 
+///pada code dibawah ini, terdapat beberapa widget yang digunakan untuk membangun tampilan aplikasi. Widget yang digunakan antara lain Column, Container, SizedBox, Row, Text, dan lain-lain.
+///berfungsi untuk membangun tampilan aplikasi dengan menggunakan Column. Column adalah widget yang digunakan untuk membuat kolom pada tampilan aplikasi. Column memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan kolom, seperti mainAxisAlignment, children, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -284,7 +300,9 @@ class Pokemon2 extends StatelessWidget {
   }
 }
 
+///class Pokemon3 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
 class Pokemon3 extends StatelessWidget {
+  ///const Pokemon3 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
   const Pokemon3({
     Key? key,
     required this.gambar,
@@ -293,11 +311,17 @@ class Pokemon3 extends StatelessWidget {
     required this.deskripsi,
   }) : super(key: key);
 
+/// String gambar digunakan untuk menyimpan link gambar pokemon.
   final String gambar;
+/// String nomor digunakan untuk menyimpan nomor pokemon.
   final String nomor;
+/// String nama_pokemon digunakan untuk menyimpan nama pokemon.
   final String nama_pokemon;
+/// String deskripsi digunakan untuk menyimpan deskripsi pokemon.
   final String deskripsi;
 
+///pada code dibawah ini, terdapat beberapa widget yang digunakan untuk membangun tampilan aplikasi. Widget yang digunakan antara lain Column, Container, SizedBox, Row, Text, dan lain-lain.
+///berfungsi untuk membangun tampilan aplikasi dengan menggunakan Column. Column adalah widget yang digunakan untuk membuat kolom pada tampilan aplikasi. Column memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan kolom, seperti mainAxisAlignment, children, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -427,7 +451,9 @@ class Pokemon3 extends StatelessWidget {
   }
 }
 
+///class Pokemon4 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
 class Pokemon4 extends StatelessWidget {
+  ///const Pokemon4 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
   const Pokemon4({
     Key? key,
     required this.gambar,
@@ -436,11 +462,17 @@ class Pokemon4 extends StatelessWidget {
     required this.deskripsi,
   }) : super(key: key);
 
+/// String gambar digunakan untuk menyimpan link gambar pokemon.
   final String gambar;
+/// String nomor digunakan untuk menyimpan nomor pokemon.
   final String nomor;
+/// String nama_pokemon digunakan untuk menyimpan nama pokemon.
   final String nama_pokemon;
+/// String deskripsi digunakan untuk menyimpan deskripsi pokemon.
   final String deskripsi;
 
+///pada code dibawah ini, terdapat beberapa widget yang digunakan untuk membangun tampilan aplikasi. Widget yang digunakan antara lain Column, Container, SizedBox, Row, Text, dan lain-lain.
+///berfungsi untuk membangun tampilan aplikasi dengan menggunakan Column. Column adalah widget yang digunakan untuk membuat kolom pada tampilan aplikasi. Column memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan kolom, seperti mainAxisAlignment, children, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -566,7 +598,9 @@ class Pokemon4 extends StatelessWidget {
   }
 }
 
+///class Pokemon5 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
 class Pokemon5 extends StatelessWidget {
+  ///const Pokemon5 digunakan untuk membuat konstruktor yang mengambil argumen key, gambar, nomor, nama_pokemon, dan deskripsi.
   const Pokemon5({
     Key? key,
     required this.gambar,
@@ -575,11 +609,17 @@ class Pokemon5 extends StatelessWidget {
     required this.deskripsi,
   }) : super(key: key);
 
+/// String gambar digunakan untuk menyimpan link gambar pokemon.
   final String gambar;
+/// String nomor digunakan untuk menyimpan nomor pokemon.
   final String nomor;
+/// String nama_pokemon digunakan untuk menyimpan nama pokemon.
   final String nama_pokemon;
+/// String deskripsi digunakan untuk menyimpan deskripsi pokemon.
   final String deskripsi;
 
+///pada code dibawah ini, terdapat beberapa widget yang digunakan untuk membangun tampilan aplikasi. Widget yang digunakan antara lain Column, Container, SizedBox, Row, Text, dan lain-lain.
+///berfungsi untuk membangun tampilan aplikasi dengan menggunakan Column. Column adalah widget yang digunakan untuk membuat kolom pada tampilan aplikasi. Column memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan kolom, seperti mainAxisAlignment, children, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Column(

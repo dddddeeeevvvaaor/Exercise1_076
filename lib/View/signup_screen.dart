@@ -3,7 +3,9 @@ import 'package:exercise1/View/login_screen.dart';
 import 'package:exercise1/Widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
+/// SignupScreen adalah class yang digunakan untuk membuat tampilan signup screen.
 class SignupScreen extends StatefulWidget {
+  /// const SignupScreen({super.key}) adalah konstruktor yang mengambil argumen super.key, tetapi tampaknya terdapat kesalahan sintaks. Seharusnya bukan `super.key`, tetapi `this.key`.
   SignupScreen({Key? key}) : super(key: key);
 
   @override
@@ -11,26 +13,38 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  /// bool _isObscure = true; adalah variabel boolean yang digunakan untuk menentukan apakah password akan ditampilkan atau tidak.
   bool _isObscure = true;
 
+  /// bool _isObscureConfirm = true; adalah variabel boolean yang digunakan untuk menentukan apakah re-password akan ditampilkan atau tidak.
   bool _isObscureConfirm = true;
 
+///String? name adalah variabel string yang digunakan untuk menyimpan nama user yang diinputkan pada form signup.
   String? name;
+///String? email adalah variabel string yang digunakan untuk menyimpan email user yang diinputkan pada form signup.
   String? email;
+///String? password adalah variabel string yang digunakan untuk menyimpan password user yang diinputkan pada form signup.
   String? password;
+///String? repassword adalah variabel string yang digunakan untuk menyimpan re-password user yang diinputkan pada form signup.
   String? repassword;
 
+/// GlobalKey<FormState> _formKey = GlobalKey<FormState>(); adalah variabel global key yang digunakan untuk mengakses form yang ada pada signup screen.
   final _formKey = GlobalKey<FormState>();
 
+/// TextEditingController _nameController = TextEditingController(); adalah variabel controller yang digunakan untuk mengontrol inputan dari form nama.
   final TextEditingController _nameController = TextEditingController();
 
+/// TextEditingController _emailController = TextEditingController(); adalah variabel controller yang digunakan untuk mengontrol inputan dari form email.
   final TextEditingController _emailController = TextEditingController();
 
+/// TextEditingController _passwordController = TextEditingController(); adalah variabel controller yang digunakan untuk mengontrol inputan dari form password.
   final TextEditingController _passwordController = TextEditingController();
 
+/// TextEditingController _confirmPasswordController = TextEditingController(); adalah variabel controller yang digunakan untuk mengontrol inputan dari form re-password.
   final TextEditingController _confirmPasswordController =
       TextEditingController();
 
+///pada code di bawah ini berfungsi untuk membangun tampilan aplikasi dengan menggunakan Scaffold. Scaffold adalah widget yang digunakan untuk membuat tampilan dasar yang biasanya digunakan untuk menampilkan beberapa widget lainnya. Scaffold memiliki beberapa properti yang dapat digunakan untuk mengatur tampilan, seperti appBar, body, bottomNavigationBar, dan lain-lain.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
